@@ -1,9 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Stream from './components/Stream';
 import './index.css';
 
+const tracks = [
+  {
+    title: 'Some track',
+    id: 1
+  },
+  {
+    title: 'Some other track',
+    id: 2
+  }
+]
+
 ReactDOM.render(
-  <App />,
+  <Stream tracks={tracks} />,
   document.getElementById('root')
 );
