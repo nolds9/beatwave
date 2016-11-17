@@ -4,8 +4,8 @@ const initialState = []
 
 export default function (state = initialState, action){
   switch (action.type) {
-    case actionTypes.TRACK_SET:
-      return setTrack(state, action)
+    case actionTypes.TRACKS_SET:
+      return setTracks(state, action)
     default:
       return state
   }
