@@ -4,7 +4,7 @@ import track from './track'
 import auth from './auth'
 
 export default combineReducers({
-  track,
   auth,
+  track,
   routing: routerReducer,
 })
