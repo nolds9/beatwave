@@ -1,10 +1,10 @@
 import React from 'react';
 import Track from "./Track"
 
-const Stream = ({ tracks = [], onAuth, user }) => {
+const Stream = ({ tracks = [], onAuth, user, onPlay }) => {
   let trackList = tracks.map((track, index) => {
     return (
-      <Track track={track} key={index} />
+      <Track track={track} key={index} onPlay={onPlay} />
     )
   })
 

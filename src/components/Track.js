@@ -1,10 +1,15 @@
 import React from 'react'
 
 const Track = props => {
-  let {track} = props
+  let {track, onPlay} = props
   return (
-    <div>
-      <h2>{track.origin.title}</h2>
+    <div className="track">
+      <h4>{track.origin.title}</h4>
+      <button
+        type="button"
+        onClick={() => onPlay(track) }>
+        Play
+      </button>
     </div>
   )
 }
